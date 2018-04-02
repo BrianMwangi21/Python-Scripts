@@ -1,7 +1,12 @@
 ﻿# [Python Scripts](https://logan1x.github.io/Python-Scripts/)
+
 [![forthebadge](http://forthebadge.com/images/badges/made-with-python.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/built-by-developers.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/check-it-out.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/check-it-out.svg)](http://www.logan1x.me/Python-Scripts/)
+
+
+[![Join the chat at https://gitter.im/Python_Scripts/Lobby](https://badges.gitter.im/Python_Scripts/Lobby.svg)](https://gitter.im/Python_Scripts/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > This Repo is a collection of Various python scripts.
 
 In this repo there are different kinds of python scripts for their respective uses. These all are open sourced and you can use them in any form for free.
@@ -30,13 +35,6 @@ cd Python-Scripts/bin
     ```python
     python air-quality.py token
     ```
-
-## Release History
-
-* 0.0.1
-    * Work in progress
-
-
 * ### Approximating *pi*
 
 This script is useful to show a way to approximate the value of pi using a Monte Carlo method. It is also optimized using the `@jit` (*just-in-time*) decorator from the [numba](https://numba.pydata.org/) library.
@@ -69,6 +67,16 @@ Encrypts or Decrypts any message you want, simply enter the message and the rota
 ```bash
 python caesar_cipher.py
 ```
+
+* ### Contributor list
+For a given repo generate contribute.md with images in same size like the one in this README.md
+
+```python
+ python .\contributors.py https://github.com/Logan1x/Python-Scripts/
+```
+where the argument is the url of the repo
+
+you may need to install packages like PIL@1.1.7 and requests if not installed 
 
 * ### End To End Encryption
 It is a simple program to implement and understand the basic of end_to_end encryption.
@@ -349,6 +357,23 @@ In case your browser stoped working delete/comment the following line in the scr
 #### _Windows_
  `os.system("TASKKILL /F /IM " + brow + ".exe")`
 
+## Release History
+
+* 0.0.1
+    * Work in progress
+
+
+### Markdown to presentation
+You can convert markdown in a directory into a **.html** file for presentation using reveal.js
+
+``` 
+python reveal-md.py -d folder_name -c config
+
+```
+
+### Note
+the config is optional. You can specify with keys as here https://github.com/hakimel/reveal.js/#configuration in a json file. Reveal.js cdn link is included in generated html you may need to download them if you want to use the presentation offline
+
 ## Meta
 
 Khushal Sharma – [@Khushal](https://twitter.com/herkuch) – sharmakhushal78@gmail.com
@@ -362,38 +387,18 @@ Distributed under the MIT LICENSE license. See [``LICENSE``](https://github.com/
 
 1. Fork it (<https://github.com/Logan1x/Python-Scripts/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
-6. Add your name with a link to your profile in the contributors list.
+3. Add your docs in `docs/data.json` file
+4. Commit your changes (`git commit -am 'Add some fooBar'`)
+5. Push to the branch (`git push origin feature/fooBar`)
+6. Create a new Pull Request
+7. Add your name with a link to your profile in the contributors list
 
 
 ## Contributors
 
 The following people helped in creating the above content.
 
-* <a href="https://github.com/Logan1x" target="_blank">Khushal Sharma</a>
-* <a href="https://github.com/KayvanMazaheri" target="_blank">Kayvan Mazaheri</a>
-* <a href="https://github.com/kalbhor" target="_blank">Lakshay Kalbhor</a>
-* <a href="https://github.com/Pradhvan">Pradhvan Bisht</a>
-* <a href="https://github.com/toonarmycaptain" target="_blank">David Antonini</a>
-* <a href="https://github.com/vigov5" target="_blank">Nguyen Anh Tien</a>
-* <a href="https://github.com/akshitgrover" target="_blank">Akshit Grover</a>
-* <a href="https://github.com/Sharanpai" target="_blank">Sharan Pai</a>
-* <a href="https://github.com/MadhavBahlMD" target="_blank">Madhav Bahl</a>
-* <a href="https://github.com/ishank011" target="_blank">Ishank Arora</a>
-* <a href="https://github.com/vis2797" target="_blank">Vishal Sharma</a>
-* <a href="https://github.com/apuayush" target="_blank">Apurva Nitanjay</a>
-* <a href="https://github.com/SuryaThiru" target="_blank">Surya K</a>
-* <a href="https://github.com/szepnapot" target="_blank">Peter L.</a>
-* <a href="https://github.com/ehnydeel" target="_blank">Andreas K.</a>
-* <a href="https://github.com/zinuzoid" target="_blank">Jetsada Machom</a>
-* <a href="https://github.com/pr0me" target="_blank">Lukas S.</a>
-* <a href="https://github.com/Rafi993" target="_blank">Rafi993</a>
-* <a href="https://github.com/iyanuashiri" target="_blank">Iyanu Ashiri</a>
-* <a href="https://github.com/niharikakrishnan">Niharika Krishnan</a>
-* <a href="https://github.com/lionasp" target="_blank">Pugach Vitalii</a>
-* <a href="https://github.com/ayrusme" target="_blank">Surya Raman</a>
+![ayrusme](./images/ayrusme.png  "ayrusme" )![lionasp](./images/lionasp.png  "lionasp" )![zinuzoid](./images/zinuzoid.png  "zinuzoid" )![dgupta777](./images/dgupta777.png  "dgupta777" )![chiraag-jain](./images/chiraag-jain.png  "chiraag-jain" )![niharikakrishnan](./images/niharikakrishnan.png  "niharikakrishnan" )![ahadali](./images/ahadali.png  "ahadali" )![khushboopaddiyar](./images/khushboopaddiyar.png  "khushboopaddiyar" )![Harshvardhan58](./images/Harshvardhan58.png  "Harshvardhan58" )![pr0me](./images/pr0me.png  "pr0me" )![abhinavralhan](./images/abhinavralhan.png  "abhinavralhan" )![Souldiv](./images/Souldiv.png  "Souldiv" )![szepnapot](./images/szepnapot.png  "szepnapot" )![SuryaThiru](./images/SuryaThiru.png  "SuryaThiru" )![apuayush](./images/apuayush.png  "apuayush" )![ishank011](./images/ishank011.png  "ishank011" )![ValentinChCloud](./images/ValentinChCloud.png  "ValentinChCloud" )![MadhavBahlMD](./images/MadhavBahlMD.png  "MadhavBahlMD" )![vigov5](./images/vigov5.png  "vigov5" )![RodolfoFerro](./images/RodolfoFerro.png  "RodolfoFerro" )![toonarmycaptain](./images/toonarmycaptain.png  "toonarmycaptain" )![harsha7890](./images/harsha7890.png  "harsha7890" )![Pradhvan](./images/Pradhvan.png  "Pradhvan" )![Rafi993](./images/Rafi993.png  "Rafi993" )![ehnydeel](./images/ehnydeel.png  "ehnydeel" )![shivamp123](./images/shivamp123.png  "shivamp123" )![vis2797](./images/vis2797.png  "vis2797" )![Sharanpai](./images/Sharanpai.png  "Sharanpai" )![kalbhor](./images/kalbhor.png  "kalbhor" )![iyanuashiri](./images/iyanuashiri.png  "iyanuashiri" )![akshitgrover](./images/akshitgrover.png  "akshitgrover" )![KayvanMazaheri](./images/KayvanMazaheri.png  "KayvanMazaheri" )![Logan1x](./images/Logan1x.png  "Logan1x" )
 
 ### If you like the project give a star  [<img src="Selection_008.png" alt="Star button" align="top">](https://github.com/Logan1x/Python-Scripts/stargazers)
 
